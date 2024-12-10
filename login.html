@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyFinFreedom | Login</title>
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="./js/tailwindcss.config.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="flex flex-col min-h-screen">
+      <div class="relative top-32 sm:top-20 w-full flex justify-center">
+        <img src="./assets/logo.png" alt="MyFinFreedom" class="w-32" />
+      </div>
+
+      <div
+        class="flex flex-col sm:justify-center justify-end items-center flex-grow"
+      >
+        <div
+          class="bg-white shadow-lg rounded-lg p-6 w-full sm:w-3/4 md:w-1/2 lg:w-2/5"
+        >
+          <h6 class="text-center text-gray-500 text-lg font-semibold mb-6">
+            Insira seus dados para entrar na sua conta
+          </h6>
+          <form>
+            <input
+              type="text"
+              placeholder="E-mail ou CPF"
+              class="w-full mb-4 px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Senha"
+              class="w-full mb-4 px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+              required
+            />
+            <div>
+              <button
+                type="submit"
+                class="w-full bg-blue-800 text-white py-3 rounded-lg flex items-center justify-center hover:bg-blue-900"
+              >
+                <i data-lucide="log-in" class="w-5 h-5 mr-2"></i>
+                Entrar
+              </button>
+            </div>
+          </form>
+          <p class="text-center text-sm mt-4 text-gray-400">
+            Não tem uma conta?
+            <a href="#" class="text-blue-600 hover:underline">Cadastre-se</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
